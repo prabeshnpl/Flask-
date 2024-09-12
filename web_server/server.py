@@ -1,4 +1,5 @@
 import csv
+import email_sender
 from flask import Flask, render_template,request,redirect
 
 app = Flask(__name__)
@@ -17,6 +18,7 @@ def submit_form():
         try:
             data = request.form.to_dict()
             write_to_database(data)
+            email_sender.send_mail(data['name'],data['email'])
             return redirect('thank_you.html')
         except:
             return 'Didn\'t save to database'
