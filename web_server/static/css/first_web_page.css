@@ -1,0 +1,23 @@
+.heading{
+    text-align: center;
+}
+img {
+    height: auto;
+    width:200px;
+}
+body{
+    background-color: aqua;
+}
+p{
+    font-size:16px;
+}
+h1{
+    border:7px solid rgb(12, 27, 235);
+    display:inline;
+    padding:3px 10px;
+}
+h3{
+    border:5px solid green;
+    display:inline;
+    padding:3px 10px;
+}

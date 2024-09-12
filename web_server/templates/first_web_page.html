@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{background-color: beige;}
+        h1{color:red;}
+        button{background-color: orange;
+        font-size: 18px;}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='dead.ico') }}">
+    <title>New project</title>
+</head>
+<body>
+
+    <h1 style="text-align:center;" id="jump">Recipes</h1>
+
+    <p>
+       <ul> 
+          <li>
+                <a href="tea.html"><button>Recipe of tea</button></a>
+          </li><br>
+          <li>
+            <a href="noodles.html"><button>Recipe of noodles</button></a>
+          </li>
+          
+       </ul>
+    </p>
+      <a href="#jump">Back to top</a>
+
+</body>
+</html>
