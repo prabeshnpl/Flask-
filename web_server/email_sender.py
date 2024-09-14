@@ -31,8 +31,8 @@ def send_mail(name,receiver_email):
 
 
     sender_email = 'your_gmail@gmail.com'
-    app_password = 'your_password'
-    subject = 'Thank You' +' '+ name 
+    app_password = 'YourPassword_or_AppPassword'
+    subject = f'Thank You {name}' 
     text_content = '''Thank you contacting me. I will try as fast as possible to try and contact with you very soon .'''
     html_content = get_thank_you_template('./templates/thank_you_template.html')
     send_email(sender_email, app_password, receiver_email,subject, text_content, html_content)
